@@ -1,0 +1,178 @@
+import React from "react";
+import Header from "./components/header";
+import Stars from "./components/starts";
+import Astronaut from "./assets/Astronaut.jpg";
+import {
+  FaLinkedinIn,
+  FaFileDownload,
+  FaGithub,
+  FaBehance,
+} from "react-icons/fa";
+import Skills from "./components/skills";
+import Movies from "./assets/movies.png";
+import Peugeot from "./assets/peugeot.png";
+import Unseen from "./assets/unseen.png";
+import Portfolio from "./components/portfolio";
+
+function App() {
+  return (
+    <>
+      <Header />
+      <Stars />
+      <div className="flex items-center justify-center min-h-3 p-4">
+        <div className="max-w-3xl w-full flex flex-col md:flex-row">
+          <div className="p-9">
+            <h2 className="font-bold text-black md:text-6xl pb-4 text-3xl font-sans">
+              Tenha seu site com a cara da sua empresa{" "}
+            </h2>
+            <p className="text-lg">
+              Desenvolvimento de Sites Institucionais, Lojas Virtuais, Landing
+              pages!
+            </p>
+            <div className="flex justify-start gap-4 pt-4">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl hover:text-blue-500"
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl hover:text-blue-500"
+              >
+                <FaFileDownload />
+              </a>
+              <a
+                href="https://www.github.com/rafagdeo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl hover:text-blue-500"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.behance.net/rafaelgoliveira"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl hover:text-blue-500"
+              >
+                <FaBehance />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="flex">
+          <img
+            src={Astronaut}
+            alt="astronaut"
+            className="w-64 h-auto rounded-full shadow-lg"
+          ></img>
+        </div>
+      </div>
+      <Skills />
+      <div
+        className="flex items-center justify-center min-h-fit my-24 pt-20"
+        id="projetos"
+      >
+        <div className="max-w-3xl w-full flex flex-col md:flex-row">
+          <div className="p-16 space-y-4">
+            <h2 className="font-bold text-black text-3xl">API Filmes</h2>
+            <p className="text-base">
+              Foi feito um projeto de filmes onde tem uma api de filmes, feito em nextJS, com tailwind.
+            </p>
+            <div className="flex justify-normal space-x-4">
+              <a
+                href="https://api-filmes-amber.vercel.app/"
+                target="_blank"
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-1 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+              >
+                Visitar
+              </a>
+
+              <a
+                href="https://github.com/rafagdeo/Api-filmes"
+                target="_blank"
+                className="text-white bg-black hover:bg-zinc-700 focus:ring-1 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 flex items-center"
+              >
+                <FaGithub className="mr-2" /> Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="flex">
+          <img
+            src={Movies}
+            alt="api-filmes"
+            className="w-auto h-auto rounded-l-xl shadow-md border-4 border-solid border-gray-950"
+          ></img>
+        </div>
+      </div>
+
+      <div
+        className="flex items-center justify-center min-h-fit my-24"
+        id="projetos"
+      >
+        <div className="max-w-3xl w-full flex flex-col md:flex-row">
+          <div className="p-16 space-y-4">
+            <h2 className="font-bold text-black text-3xl">Site Peugeot Amazonas</h2>
+            <p className="text-base">
+              Site desenvolvido com WordPress.
+            </p>
+            <div className="flex justify-normal space-x-4">
+              <a
+                href="https://peugeot.grupoamazonas.com.br/"
+                target="_blank"
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-1 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+              >
+                Visitar
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="flex">
+          <img
+            src={Peugeot}
+            alt="api-filmes"
+            className="w-auto h-auto rounded-l-xl shadow-md border-2 border-solid border-gray-300"
+          ></img>
+        </div>
+      </div>
+      <div
+        className="flex items-center justify-center min-h-fit my-24"
+        id="projetos"
+      >
+        <div className="max-w-3xl w-full flex flex-col md:flex-row">
+          <div className="p-16 space-y-4">
+            <h2 className="font-bold text-black text-3xl">Loja Unseen</h2>
+            <p className="text-base">
+              Loja desenvolvida na plataforma NuvemShop.
+            </p>
+            <div className="flex justify-normal space-x-4">
+              <a
+                href="https://www.lojaunseen.com.br/"
+                target="_blank"
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-1 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+              >
+                Visitar
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="flex">
+          <img
+            src={Unseen}
+            alt="loja unseen"
+            className="w-auto h-auto rounded-l-xl shadow-md border-2 border-solid border-gray-300 "
+          ></img>
+        </div>
+      </div>
+      <Portfolio />
+    </>
+  );
+}
+
+export default App;
