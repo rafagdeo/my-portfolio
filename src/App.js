@@ -19,11 +19,11 @@ function App() {
     <>
       <Header />
       <Stars />
-      <div className="flex items-center justify-center min-h-3 p-4">
-        <div className="max-w-3xl w-full flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row items-center justify-center min-h-3 p-4">
+        <div className="order-2 max-w-3xl w-full flex md:flex-row order-1">
           <div className="p-9">
             <h2 className="font-bold text-black md:text-6xl pb-4 text-3xl font-sans">
-              Tenha seu site com a cara da sua empresa{" "}
+              Tenha seu site com a cara da sua empresa
             </h2>
             <p className="text-lg">
               Desenvolvimento de Sites Institucionais, Lojas Virtuais, Landing
@@ -31,7 +31,7 @@ function App() {
             </p>
             <div className="flex justify-start gap-4 pt-4">
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/rafagdeo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-blue-500"
@@ -65,7 +65,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex order-1 md:order-2">
           <img
             src={Astronaut}
             alt="astronaut"
@@ -75,11 +75,11 @@ function App() {
       </div>
       <Skills />
       <div
-        className="flex items-center justify-center min-h-fit my-24 pt-20"
+        className="flex flex-col md:flex-row min-h-fit py-10 "
         id="projetos"
       >
-        <div className="max-w-3xl w-full flex flex-col md:flex-row">
-          <div className="p-16 space-y-4">
+        <div className="order-2 max-w-3xl w-full md:order-1">
+          <div className="flex flex-col order-2 p-10 space-y-4 md:flex order-1">
             <h2 className="font-bold text-black text-3xl">API Filmes</h2>
             <p className="text-base">
               Foi feito um projeto de filmes onde tem uma api de filmes, feito em nextJS, com tailwind.
@@ -92,7 +92,6 @@ function App() {
               >
                 Visitar
               </a>
-
               <a
                 href="https://github.com/rafagdeo/Api-filmes"
                 target="_blank"
@@ -103,21 +102,21 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="flex">
+        <div className="order-1 flex md:order-2">
           <img
             src={Movies}
             alt="api-filmes"
-            className="w-auto h-auto rounded-l-xl shadow-md border-4 border-solid border-gray-950"
+            className="sm:rounded-none md:rounded-l-xl w-auto h-auto  shadow-md border-4 border-solid border-gray-950"
           ></img>
         </div>
       </div>
 
       <div
-        className="flex items-center justify-center min-h-fit my-24"
+        className="flex flex-col md:flex-row min-h-fit py-10"
         id="projetos"
       >
-        <div className="max-w-3xl w-full flex flex-col md:flex-row">
-          <div className="p-16 space-y-4">
+        <div className="order-2 max-w-3xl w-full md:order-1">
+          <div className="flex flex-col order-2 p-10 space-y-4 md:flex order-1">
             <h2 className="font-bold text-black text-3xl">Site Peugeot Amazonas</h2>
             <p className="text-base">
               Site desenvolvido com WordPress.
@@ -133,20 +132,20 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="flex">
+        <div className="order-1 flex md:order-2">
           <img
             src={Peugeot}
             alt="api-filmes"
-            className="w-auto h-auto rounded-l-xl shadow-md border-2 border-solid border-gray-300"
+            className="sm:rounded-none md:rounded-l-xl w-auto h-auto shadow-md border-4 border-solid"
           ></img>
         </div>
       </div>
       <div
-        className="flex items-center justify-center min-h-fit my-24"
+        className="flex flex-col md:flex-row min-h-fit py-10"
         id="projetos"
       >
-        <div className="max-w-3xl w-full flex flex-col md:flex-row">
-          <div className="p-16 space-y-4">
+        <div className="order-2 max-w-3xl w-full md:order-1">
+          <div className="flex flex-col order-2 p-10 space-y-4 md:flex order-1">
             <h2 className="font-bold text-black text-3xl">Loja Unseen</h2>
             <p className="text-base">
               Loja desenvolvida na plataforma NuvemShop.
@@ -162,11 +161,11 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="flex">
+        <div className="order-1 flex md:order-2">
           <img
             src={Unseen}
             alt="loja unseen"
-            className="w-auto h-auto rounded-l-xl shadow-md border-2 border-solid border-gray-300 "
+            className="sm:rounded-none md:rounded-l-xl w-auto h-auto shadow-md border-4 border-solid"
           ></img>
         </div>
       </div>
