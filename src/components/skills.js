@@ -4,7 +4,7 @@ import { SiTailwindcss, SiElixir, SiPhoenixframework, SiTypescript } from 'react
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-6 pt-20" id='skills'>
+    <div className="flex flex-col items-center justify-center p-6 " id='skills'>
       <h2 className="text-4xl font-bold text-gray-800 mb-16">Minhas Skills</h2>
       <div className="grid grid-cols-4 gap-8 max-w-7xl md:grid-cols-7">
         <div className="flex flex-col items-center">

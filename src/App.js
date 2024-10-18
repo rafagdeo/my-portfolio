@@ -7,21 +7,21 @@ import {
   FaFileDownload,
   FaGithub,
   FaBehance,
+  FaWhatsapp,
 } from "react-icons/fa";
 import Skills from "./components/skills";
 import Movies from "./assets/movies.png";
 import Peugeot from "./assets/peugeot.png";
 import Unseen from "./assets/unseen.png";
-import Portfolio from "./components/portfolio";
 
 function App() {
   return (
     <>
       <Header />
       <Stars />
-      <div className="flex flex-col md:flex-row items-center justify-center min-h-3 p-4">
+      <div className="py-10 flex flex-col md:flex-row items-center justify-center min-h-3 my-14 px-4">
         <div className="order-2 max-w-3xl w-full flex md:flex-row order-1">
-          <div className="p-9">
+          <div className="p-3">
             <h2 className="font-bold text-black md:text-6xl pb-4 text-3xl font-sans">
               Tenha seu site com a cara da sua empresa
             </h2>
@@ -74,11 +74,15 @@ function App() {
         </div>
       </div>
       <Skills />
+      <div id="projetos" className='text-center pt-24'>
+            <h2 className="font-bold text-4xl">Alguns Projetos</h2>
+            <a href="https://www.behance.net/rafaelgoliveira" target="_blank" className="justify-center font-medium text-xl px-5 py-2.5 flex items-center gap-2"><FaBehance />Portfólio</a>
+
+        </div>
       <div
         className="flex flex-col md:flex-row min-h-fit py-10 "
-        id="projetos"
       >
-        <div className="order-2 max-w-3xl w-full md:order-1">
+        <div className="order-2 max-w-3xl w-full md:order-1 justify-center content-center">
           <div className="flex flex-col order-2 p-10 space-y-4 md:flex order-1">
             <h2 className="font-bold text-black text-3xl">API Filmes</h2>
             <p className="text-base">
@@ -115,8 +119,8 @@ function App() {
         className="flex flex-col md:flex-row min-h-fit py-10"
         id="projetos"
       >
-        <div className="order-2 max-w-3xl w-full md:order-1">
-          <div className="flex flex-col order-2 p-10 space-y-4 md:flex order-1">
+        <div className="order-2 max-w-3xl w-full md:order-1 justify-center content-center">
+          <div className="flex flex-col order-2 p-10 space-y-4 md:flex order-1 ">
             <h2 className="font-bold text-black text-3xl">Site Peugeot Amazonas</h2>
             <p className="text-base">
               Site desenvolvido com WordPress.
@@ -144,7 +148,7 @@ function App() {
         className="flex flex-col md:flex-row min-h-fit py-10"
         id="projetos"
       >
-        <div className="order-2 max-w-3xl w-full md:order-1">
+        <div className="order-2 max-w-3xl w-full md:order-1 justify-center content-center">
           <div className="flex flex-col order-2 p-10 space-y-4 md:flex order-1">
             <h2 className="font-bold text-black text-3xl">Loja Unseen</h2>
             <p className="text-base">
@@ -169,7 +173,6 @@ function App() {
           ></img>
         </div>
       </div>
-      <Portfolio />
     </>
   );
 }
