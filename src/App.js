@@ -519,7 +519,7 @@ function App() {
                 </svg>
               </div>
               <a
-                href="https://www.toquesdeno.com.br/"
+                href="https://www.toquedeno.com.br/"
                 target="_blank"
                 class="py-2 text-center content-center justify-center gap-3 flex items-center rounded-full uppercase font-bold transition ease-in-out delay-150 bg-primary hover:-translate-y-1 hover:scale-100 hover:bg-primary/70 duration-300 ..."
               >
