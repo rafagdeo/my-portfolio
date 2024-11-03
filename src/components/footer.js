@@ -6,7 +6,7 @@ function Footer() {
   return (
     <><section className="border-y border-gray-700 ">
       <div className="grid md:mx-auto max-w-[1440px] px-10 md:flex">
-        <div className="py-0 pr-0 border-0 border-black md:w-1/2 md:border-gray-700 border-r grid gap-4 md:py-24 md:pr-24">
+        <div className="py-8 pr-0 border-0 border-black md:w-1/2 md:border-gray-700 border-r grid gap-4 md:py-24 md:pr-24">
           <LuEye className="size-12 text-white" />
           <h2 className="text-3xl font-bold text-primary">Gostou do que viu?</h2>
           <p className="text-lg text-white">
