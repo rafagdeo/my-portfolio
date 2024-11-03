@@ -55,14 +55,14 @@ function App() {
   <div class="h-1 w-20 bg-secundary"></div>
   <div class="bg-secundary flex rounded-3xl gap-11 w-4/5 items-center content-center justify-center min-h-48">
     <div class="grid-cols-2 grid md:grid-cols-8 flex items-center gap-6 p-5">
-      <FaReact width={80}/>
-      <SiTypescript />
-      <RiTailwindCssFill />
-      <FaNodeJs />
-      <SiElixir/>
-      <FaPhoenixFramework  />
-      <FaWordpress />
-      <FaElementor />
+      <FaReact className="size-10 md:size-20" />
+      <SiTypescript className="size-10 md:size-20" />
+      <RiTailwindCssFill className="size-10 md:size-20" />
+      <FaNodeJs className="size-10 md:size-20" />
+      <SiElixir className="size-10 md:size-20" />
+      <FaPhoenixFramework className="size-10 md:size-20" />
+      <FaWordpress className="size-10 md:size-20" />
+      <FaElementor className="size-10 md:size-20" />
     </div>
     
   </div>
