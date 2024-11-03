@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div>
-      <header className="navbar fixed px-10 md:border-b-2 border-white/20 flex justify-between bg-black max-w-[1440px] mx-auto py-4 mb-10 top-0 sticky z-10 drop-shadow-md dark:text-black">
+      <header className="navbar fixed w-full px-10 md:border-b-2 border-white/20 flex justify-between bg-black sticky max-w-[1440px] mx-auto py-4 mb-10 top-0  z-10 drop-shadow-md dark:text-black">
         <div className="logo-page">
           <a className="header-logo text-2xl font-bold" href="https://www.rafaelguilherme.com.br">
             <img src={Logo} width="200" alt="Logo" />
