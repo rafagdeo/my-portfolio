@@ -7,8 +7,14 @@ module.exports = {
     fontFamily: {
       inter: ['Inter', 'sans-serif']
     },
-    extend: {},
+    extend: {
+    colors: {
+      brand: "#FD4F00",
+      primary: "#1D4ED8",
+      secundary: "#B4CAFF",
+    }
   },
+},
   plugins: [],
 }
 

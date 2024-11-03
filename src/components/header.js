@@ -1,87 +1,148 @@
-import { useState } from "react";
+import React, { useState } from 'react';
+import Logo from '../assets/logo-black.svg'; // Ajuste o caminho conforme necessário
 
-export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <nav className="navbar flex justify-between py-4 px-8 bg-white top-0 sticky z-20 drop-shadow-md dark:text-black">
-      <div className="logo-page">
-        <a className="header-logo text-2xl font-bold" href="/">
-          Rafael.dev
-        </a>
-      </div>
-      <div className="md:hidden flex items-center">
+    <div>
+      <header className="navbar fixed px-10 md:border-b-2 border-white/20 flex justify-between bg-black max-w-[1440px] mx-auto py-4 mb-10 top-0 sticky z-10 drop-shadow-md dark:text-black">
+        <div className="logo-page">
+          <a className="header-logo text-2xl font-bold" href="https://www.rafaelguilherme.com.br">
+            <img src={Logo} width="200" alt="Logo" />
+          </a>
+        </div>
+
+        {/* Itens do Menu no Desktop */}
+        <nav className="hidden md:flex md:items-center">
+          <ul className="flex text-white content-center items-center">
+            <li>
+              <a
+                href="https://rafaelguilherme.com.br"
+                className="rounded-full border-2 border-primary py-2 px-6 hover:bg-primary"
+              >
+                Home
+              </a>
+            </li>
+            <span class="h-1 w-2 bg-primary align-middle"></span>
+            <li>
+              <a
+                href="#skills"
+                className="rounded-full border-2 border-primary py-2 px-6 hover:bg-primary"
+              >
+                Skills
+              </a>
+            </li>
+            <span class="h-1 w-2 bg-primary align-middle"></span>
+            <li>
+              <a
+                href="#services"
+                className="rounded-full border-2 border-primary py-2 px-6 hover:bg-primary"
+              >
+                Serviços
+              </a>
+            </li>
+            <span class="h-1 w-2 bg-primary align-middle"></span>
+            <li>
+              <a
+                href="#projects"
+                className="rounded-full border-2 border-primary py-2 px-6 hover:bg-primary"
+              >
+                Projetos
+              </a>
+            </li>
+            <span class="h-1 w-2 bg-primary align-middle"></span>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=5513996687799&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-primary font-bold text-black py-2 px-6 hover:bg-black text-white border-primary border-2"
+              >
+                Contato
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        {/* Botão Hambúrguer para Mobile */}
         <button
-          className="focus:outline-none"
+          id="menu-toggle"
+          className="text-white md:hidden focus:outline-none"
           onClick={toggleMenu}
         >
-          <div className={`hamburger ${isOpen ? "open" : ""}`}>
-            <span className="block w-6 h-0.5 bg-black mb-1 transition-transform transform duration-300 ease-in-out"></span>
-            <span className="block w-6 h-0.5 bg-black mb-1 transition-transform transform duration-300 ease-in-out"></span>
-            <span className="block w-6 h-0.5 bg-black transition-transform transform duration-300 ease-in-out"></span>
-          </div>
+          <svg
+            className="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
         </button>
-      </div>
-      <div
-        className={`fixed top-0 left-0 h-full w-64 bg-white backdrop-blur-md shadow-lg z-30 transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out md:hidden`}
-      >
-        <button
-          className="absolute top-4 right-4 text-black text-xl"
-          onClick={toggleMenu}
-        >
-          &times;
-        </button>
-        <ul className="flex bg-white flex-col mt-12 space-y-8 p-8">
-          <li>
-            <a href="/" className="font-medium hover:underline">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#skills" className="font-medium hover:underline">
-              Minhas Skills
-            </a>
-          </li>
-          <li>
-            <a href="#projetos" className="font-medium hover:underline">
-              Projetos
-            </a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=5513996687799&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site!" className="bg-blue-700 text-white py-2 px-6 rounded-lg font-medium hover:underline" target="_blank">
-              Contato
-            </a>
-          </li>
-        </ul>
-      </div>
-      <nav className="hidden md:flex space-x-5 items-center">
-        <ul>
-          <a href="/" className="font-medium hover:underline">
-            Home
-          </a>
-        </ul>
-        <ul>
-          <a href="#skills" className="font-medium hover:underline">
-            Minhas Skills
-          </a>
-        </ul>
-        <ul>
-          <a href="#projetos" className="font-medium hover:underline">
-            Projetos
-          </a>
-        </ul>
-        <ul>
-          <a href="https://api.whatsapp.com/send?phone=5513996687799&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site!" className="bg-blue-700 text-white py-2 px-6 rounded-lg font-medium hover:underline" target="_blank">
-            Contato
-          </a>
-        </ul>
-      </nav>
-    </nav>
+      </header>
+
+      {/* Menu Lateral para Mobile */}
+      {isMenuOpen && (
+        <div className="fixed z-10 top-16 left-0 w-full h-[calc(60vh-4rem)] bg-black text-white transition-transform duration-300">
+          <ul className="flex flex-col items-center justify-center h-full w-full space-y-8 ">
+            <li>
+              <a
+                href="https://rafaelguilherme.com.br"
+                className="w-full rounded-full border-2 border-primary py-2 px-14 hover:bg-primary"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#skills"
+                className="w-full rounded-full border-2 border-primary py-2 px-14 hover:bg-primary"
+              >
+                Skills
+              </a>
+            </li>
+            <li>
+              <a
+                href="#services"
+                className="w-full rounded-full border-2 border-primary py-2 px-12 hover:bg-primary"
+              >
+                Serviços
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className="rounded-full border-2 border-primary py-2 px-12 hover:bg-primary"
+              >
+                Projetos
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=5513996687799&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-primary font-bold text-black py-2 px-12   hover:bg-primary"
+              >
+                Contato
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
+    </div>
   );
-}
+};
+
+export default Header;
