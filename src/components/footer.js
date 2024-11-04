@@ -13,7 +13,7 @@ function Footer() {
             Se você chegou até aqui, por que não nos envia uma mensagem? Estamos agendando novos projetos a partir de novembro, então não perca essa oportunidade!
           </p>
           <a href="https://api.whatsapp.com/send?phone=5513996687799&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site!" className="bg-primary text-center w-full md:w-64 hover:bg-primary/90 rounded-full text-white font-bold py-2 px-4">
-            Entre em Contato
+            Entre em Contato!
           </a>
         </div>
 
