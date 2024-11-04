@@ -24,13 +24,13 @@ function App() {
     <>
       <Header />
 
-      <section id='home' class="px-10 flex md:mt-10 md:px-10 md:pb-0 md:flex max-w-[1440px] mx-auto gap-11 ">
+      <section id='home' class="px-10 flex md:mt-10 md:px-10 md:pb-0 md:flex h-full max-w-[1440px] mx-auto gap-11 ">
         <div class="grid p-5 bg-secundary md:flex rounded-3xl md:w-5/6">
-          <div class="grid p-3 order-last md:content-center md:order-1 md:grid p-10 gap-6 ">
+          <div class="grid order-last md:content-center md:order-1 md:grid p-5 gap-6 ">
             <h1 class="text-3xl md:text-black font-bold md:text-5xl ">
               Transforme suas ideias em soluções digitais de alto impacto
             </h1>
-            <h2 class="text-2xl md:text-4xl">
+            <h2 class="text-2xl md:text-2xl">
               Oferecemos o suporte que você precisa para levar o seu negócio ao
               próximo nível.
             </h2>
@@ -39,7 +39,7 @@ function App() {
             </a>
           </div>
           <div class="grid order-1 md:order-2  p-3 content-center">
-            <img src={Vector} class="w-[100px] md:w-[1000px]" />
+            <img src={Vector} class="w-[100px] md:w-[600px]" />
           </div>
         </div>
         <div class="hidden md:block bg-primary w-1/6 content-center text-center rounded-3xl">
@@ -829,7 +829,7 @@ function App() {
                 </svg>
               </div>
               <a
-                href="https://www.r2conecta.com.br/"
+                href="https://www.r2conecta.com/"
                 target="_blank"
                 class="py-2 text-center content-center justify-center gap-3 flex items-center rounded-full uppercase font-bold transition ease-in-out delay-150 bg-primary hover:-translate-y-1 hover:scale-100 hover:bg-primary/70 duration-300 ..."
               >

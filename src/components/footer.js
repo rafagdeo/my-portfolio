@@ -27,7 +27,7 @@ function Footer() {
       </div>
     </section>
     <div className="mx-auto text-center md:text-left max-w-[1440px] py-4 px-10">
-        <p className="font-light text-white/70">©2024 RafaelGuilherme. All Rights Reserved.</p>
+        <p className="text-sm md:font-light text-white/70">©2024 RafaelGuilherme. All Rights Reserved.</p>
     </div>
   </>
   );
