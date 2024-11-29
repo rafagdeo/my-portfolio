@@ -15,8 +15,9 @@ import { SiElixir } from 'react-icons/si';
 import { FaPhoenixFramework } from 'react-icons/fa';
 import { FaWordpress } from 'react-icons/fa';
 import { FaElementor } from 'react-icons/fa';
-import  Stars  from './components/stars';
+import  TestimonialsCarousel  from './components/testimonialscarousel';
 import Footer from './components/footer';
+
 
 function App() {
   return (
@@ -849,7 +850,7 @@ function App() {
           </div>
         </div>
       </section>
-      <Stars />
+      <TestimonialsCarousel />
       <Footer />
     </>
   );
