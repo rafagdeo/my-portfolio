@@ -27,7 +27,7 @@ function App() {
       <section id='home' class="px-10 flex md:mt-10 md:px-10 md:pb-0 md:flex h-full max-w-[1440px] mx-auto gap-11 ">
         <div class="grid p-5 bg-secundary md:flex rounded-3xl md:w-5/6">
           <div class="grid order-last md:content-center md:order-1 md:grid p-5 gap-6 ">
-            <h1 class="text-3xl md:text-black font-bold md:text-5xl ">
+            <h1 class="text-3xl md:text-black font-bold md:text-5xl uppercase">
               Transforme suas ideias em soluções digitais de alto impacto
             </h1>
             <h2 class="text-2xl md:text-2xl">
@@ -38,8 +38,8 @@ function App() {
               Saiba mais sobre nossos serviços
             </a>
           </div>
-          <div class="grid order-1 md:order-2  p-3 content-center">
-            <img src={Vector} class="w-[100px] md:w-[600px]" />
+          <div class="grid order-1 md:order-2 md:w-4/6 p-3 content-center">
+            <img src={Vector} class="w-[100px] md:w-[250px] animate-[spin_5s_linear_infinite]" />
           </div>
         </div>
         <div class="hidden md:block bg-primary w-1/6 content-center text-center rounded-3xl">
@@ -85,7 +85,7 @@ function App() {
           </p>
         </div>
         <div class="grid grid-cols-1 gap-10 sm:mt-10 mb-4  md:grid md:gap-x-8 md:gap-y-4 md:grid-cols-3 py-10">
-          <div class="grid gap-2 border-b-2 border-white/20 pb-6">
+          <div class="grid gap-2 border-b-2 border-white/20 hover:border-primary pb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -108,7 +108,7 @@ function App() {
             </p>
           </div>
 
-          <div class="grid gap-2 border-b-2 border-white/20 pb-6">
+          <div class="grid gap-2 border-b-2 border-white/20 hover:border-primary pb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -131,7 +131,7 @@ function App() {
             </p>
           </div>
 
-          <div class="grid gap-2 border-b-2 border-white/20 pb-6">
+          <div class="grid gap-2 border-b-2 border-white/20 hover:border-primary pb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -156,7 +156,7 @@ function App() {
         </div>
 
         <div class="grid grid-cols-1 gap-10 md:grid md:gap-x-8 md:gap-y-4 md:grid-cols-3">
-          <div class="grid gap-2 border-b-2 border-white/20 pb-6">
+          <div class="grid gap-2 border-b-2 border-white/20 hover:border-primary pb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -178,7 +178,7 @@ function App() {
             </p>
           </div>
 
-          <div class="grid gap-2 border-b-2 border-white/20 pb-6">
+          <div class="grid gap-2 border-b-2 border-white/20 hover:border-primary pb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -200,7 +200,7 @@ function App() {
             </p>
           </div>
 
-          <div class="grid gap-2 border-b-2 border-white/20 pb-6">
+          <div class="grid gap-2 border-b-2 border-white/20 hover:border-primary pb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -741,7 +741,7 @@ function App() {
             </div>
           </div>
         </div>
-        <a href="/projects" className="text-center text-lg my-2 md:text-2xl hover:underline hover:text-primary rounded-full text-white font-bold md:my-8">Confirma mais projetos feitos</a>
+        <a href="/projects" className="text-center underline text-primary text-lg my-2 md:text-2xl hover:text-white rounded-full font-bold md:my-8">Ver mais projetos</a>
       </section>
       <TestimonialsCarousel />
       <Footer />

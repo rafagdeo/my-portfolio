@@ -6,14 +6,14 @@ function Footer() {
   return (
     <><section className="border-y border-gray-700 ">
       <div className="mx-auto md:mx-auto md:w-[1440px] px-10 md:flex">
-        <div className="p-8 break-normal content-center space-y-6 md:pr-14 border-0 border-black md:w-1/2 md:border-gray-700 border-r md:space-y-6">
+        <div className="px-2 py-6 break-normal content-center space-y-6 md:pr-14 md:py-12 border-0 border-black md:w-1/2 md:border-gray-700 border-r md:space-y-6">
           <LuEye className="size-12 text-white" />
           <h2 className="text-3xl font-bold text-primary">Gostou do que viu?</h2>
           <p className="text-lg text-white break-normal">
             Se você chegou até aqui, por que não nos envia uma mensagem?
             </p>
             <p className="text-lg text-white break-normal">
-            Estamos agendando novos projetos a partir de novembro, então não perca essa oportunidade!
+            Estamos aguardando teu contato, então não perca essa oportunidade!
           </p>
           <button><a href="https://api.whatsapp.com/send?phone=5513996687799&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site!" className="bg-primary text-center hover:bg-primary/90 rounded-full text-white font-bold py-2 px-4">
             Entre em Contato
