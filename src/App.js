@@ -741,7 +741,7 @@ function App() {
             </div>
           </div>
         </div>
-        <a href="https://rafaelguilherme.com.br/projects" className="text-center text-lg my-2 md:text-2xl hover:underline hover:text-primary rounded-full text-white font-bold md:my-8">Confirma mais projetos feitos</a>
+        <a href="/projects" className="text-center text-lg my-2 md:text-2xl hover:underline hover:text-primary rounded-full text-white font-bold md:my-8">Confirma mais projetos feitos</a>
       </section>
       <TestimonialsCarousel />
       <Footer />
