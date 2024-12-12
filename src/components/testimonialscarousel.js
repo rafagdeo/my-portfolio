@@ -19,11 +19,11 @@ const testimonials = [
 const TestimonialsCarousel = () => {
   return (
     <div className="p-4 md:w-[1127px] md:mx-auto my-6 md:space-y-12 text-center">
-      <h2 className="text-4xl font-bold text-white">Avaliações</h2>
+      <h2 className="text-4xl font-bold text-white">O que nossos clientes dizem</h2>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
-        slidesPerView={2}
+        slidesPerView={1}
         loop={true}
         pagination={{ clickable: true }}
         navigation={true}
@@ -34,7 +34,7 @@ const TestimonialsCarousel = () => {
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index} className="p-10">
-            <div className="text-center p-6 rounded-lg shadow-md">
+            <div className="text-center p-6">
               <div className="stars text-yellow-500 text-2xl mb-2">★★★★★</div>
               <p className="text-lg italic text-white">
                 "{testimonial.feedback}"

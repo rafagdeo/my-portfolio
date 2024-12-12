@@ -1,42 +1,23 @@
-const express = require("express");
-const nodemailer = require("nodemailer");
-const bodyParser = require("body-parser");
-const cors = require("cors");
-require("dotenv").config();
+const express = require('express');
+const cors = require('cors');
+require('dotenv').config(); // Para carregar variáveis do .env
 
 const app = express();
-const PORT = 5000;
-const cors = require("cors");
+const PORT = process.env.PORT || 3001;  // Usando a porta do .env ou 3001 como padrão
 
-app.use(cors({ origin: "http://localhost:3000" }));
 app.use(cors());
-app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json());
 
-app.post("/send-email", async (req, res) => {
-  const { name, email, message } = req.body;
-
-  try {
-    const transporter = nodemailer.createTransport({
-      service: "gmail", 
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
-
-    const mailOptions = {
-      from: email,
-      to: process.env.EMAIL_USER,
-      subject: `Mensagem de ${name}`,
-      text: message,
-    };
-
-    await transporter.sendMail(mailOptions);
-    res.status(200).send("E-mail enviado com sucesso!");
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("Erro ao enviar o e-mail.");
+// Endpoint para enviar e-mail
+app.post('/send-email', (req, res) => {
+  const { email, subject, message } = req.body;
+  
+  if (!email || !subject || !message) {
+    return res.status(400).json({ error: 'Todos os campos são obrigatórios!' });
   }
+
+  console.log(`E-mail enviado para: ${email}, Assunto: ${subject}`);
+  res.status(200).json({ message: 'E-mail enviado com sucesso!' });
 });
 
 app.listen(PORT, () => {

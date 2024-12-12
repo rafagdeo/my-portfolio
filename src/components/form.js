@@ -19,7 +19,7 @@ const Form = () => {
     setStatus("");
 
     try {
-      await axios.post("http://localhost:3000/send-email", formData);
+      await axios.post("http://localhost:3001/send-email", formData);
       setStatus("E-mail enviado com sucesso!");
     } catch (error) {
       setStatus("Erro ao enviar o e-mail.");
@@ -28,7 +28,7 @@ const Form = () => {
   };
 
   return (
-    <div className="p-6space-y-4">
+    <div className="p-6 space-y-4 max-auto container">
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="block text-lg font-medium text-white">Nome</label>
@@ -37,7 +37,7 @@ const Form = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-2 border rounded-md font-medium text-white bg-transparent focus:bg-white focus:text-black border-white focus:border-black"
+            className="w-80 md:w-full p-2 border rounded-md font-medium text-white bg-transparent focus:bg-white focus:text-black border-white focus:border-black"
             required
           />
         </div>
@@ -48,7 +48,7 @@ const Form = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-2 border rounded-md font-medium text-white bg-transparent focus:bg-white focus:text-black border-white focus:border-black"
+            className="p-2 border rounded-md font-medium text-white bg-transparent focus:bg-white focus:text-black border-white focus:border-black"
             required
           />
         </div>
@@ -58,13 +58,13 @@ const Form = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full p-2 border rounded-md font-medium text-white bg-transparent focus:bg-white focus:text-black border-white focus:border-black"
+            className="p-2 border rounded-md font-medium text-white bg-transparent focus:bg-white focus:text-black border-white focus:border-black"
             required
           ></textarea>
         </div>
         <button
           type="submit"
-          className="w-full bg-primary font-bold  text-white py-2 px-4 rounded-full hover:bg-blue-600"
+          className="bg-primary font-bold  text-white py-2 px-4 rounded-full hover:bg-blue-600"
         >
           Enviar
         </button>
