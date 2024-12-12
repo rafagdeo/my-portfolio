@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './App';
 import Projects from '../src/routes/projects';
 
 
@@ -18,9 +17,6 @@ const router = createBrowserRouter([
     element: < Projects />,
   }
 ]);
-
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

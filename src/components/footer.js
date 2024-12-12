@@ -1,13 +1,12 @@
 import React from 'react';
 import { LuEye } from "react-icons/lu";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
-import Form from "./form"
 
 function Footer() {
   return (
     <><section className="border-y border-gray-700 ">
-      <div className="mx-auto md:mx-auto w-[1440px] px-10 md:flex">
-        <div className="p-8 content-center space-y-6 md:pr-14 border-0 border-black md:w-1/2 md:border-gray-700 border-r md:space-y-6">
+      <div className="mx-auto md:mx-auto md:w-[1440px] px-10 md:flex">
+        <div className="p-8 break-normal content-center space-y-6 md:pr-14 border-0 border-black md:w-1/2 md:border-gray-700 border-r md:space-y-6">
           <LuEye className="size-12 text-white" />
           <h2 className="text-3xl font-bold text-primary">Gostou do que viu?</h2>
           <p className="text-lg text-white break-normal">
