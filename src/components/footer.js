@@ -1,6 +1,4 @@
-import React from 'react';
 import { LuEye } from "react-icons/lu";
-import { HiOutlineSpeakerphone } from "react-icons/hi";
 
 function Footer() {
   return (
@@ -29,7 +27,7 @@ function Footer() {
       </div>
     </section>
     <div className="mx-auto text-center md:text-left max-w-[1440px] py-4 px-10">
-        <p className="text-sm md:font-light text-white/70">©2024 RafaelGuilherme. All Rights Reserved.</p>
+        <p className="text-sm md:font-light text-white/70">©2025 RafaelGuilherme. All Rights Reserved.</p>
     </div>
     <a href="https://api.whatsapp.com/send?phone=5513996687799&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site!" target="_blank" rel="noreferrer noopener" class="fixed bottom-4 right-4 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#25d366]">
       <div className="absolute z-10 top-0 left-0 w-full h-full rounded-full bg-[#25d366] animate-ping"></div>

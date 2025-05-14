@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "titulo": "Onmidia",
+    "imagem": "projetos/onmidia.png",
+    "modelo": "Institucional",
+    "link": "https://onmidiamkt.com.br"
+  },
+  {
+    "id": 2,
+    "titulo": "TruckBus",
+    "modelo": "Institucional",
+    "imagem": "projetos/tbus.png",
+    "link": "https://tb.onmidiamkt.com.br"
+  },
+  {
+    "id": 3,
+    "titulo": "Love Breads",
+    "modelo": "Institucional",
+    "imagem": "projetos/lovebreads.png",
+    "link": "https://lovebreads.com.br"
+  },
+  {
+    "id": 4,
+    "titulo": "Adflix",
+    "modelo": "Institucional",
+    "imagem": "projetos/adflix.png",
+    "link": "https://adflix.com.br"
+  },
+  {
+    "id": 5,
+    "titulo": "Elite Baterias",
+    "modelo": "Institucional",
+    "imagem": "projetos/elite.png",
+    "link": "https://elitebaterias.onmidiamkt.com.br"
+  },
+  {
+    "id": 6,
+    "titulo": "Loja Unseen",
+    "modelo": "Loja virtual",
+    "imagem": "projetos/unseen.png",
+    "link": "https://lojaunseen.com.br"
+  },
+  {
+    "id": 7,
+    "titulo": "Dra Ana Luiza",
+    "modelo": "Landing Page",
+    "imagem": "projetos/ana.png",
+    "link": "https://analuizamuller.com.br/"
+  },
+  {
+    "id": 8,
+    "titulo": "Dr Bryan Pediatra",
+    "modelo": "Landing Page",
+    "imagem": "projetos/bryan.png",
+    "link": "https://drbryancajado.com.br/"
+  },{
+    "id": 9,
+    "titulo": "Iaports",
+    "modelo": "Institucional",
+    "imagem": "projetos/iaports.png",
+    "link": "https://iaports.com.br"
+  },
+  {
+    "id": 10,
+    "titulo": "Casa das Molduras",
+    "modelo": "Institucional",
+    "imagem": "projetos/cdm.png",
+    "link": "https://cdm.onmidiamkt.com.br"
+  },
+  {
+    "id": 11,
+    "titulo": "Dra Fernanda Chaves",
+    "modelo": "Landing Page",
+    "imagem": "projetos/fernanda-chaves.png",
+    "link": "https://fernandachaves.com.br/"
+  },
+  {
+    "id": 12,
+    "titulo": "Compass Advisors",
+    "modelo": "Landing Page",
+    "imagem": "projetos/compass.png",
+    "link": "https://compassadvisors.com.br/"
+  },
+  {
+    "id": 13,
+    "titulo": "Dra Laura Vizibelli",
+    "modelo": "Landing Page",
+    "imagem": "projetos/laura.png",
+    "link": "https://lauravizibelli.com.br/"
+  },
+  {
+    "id": 14,
+    "titulo": "Dra Isabelle Nebias",
+    "modelo": "Landing Page",
+    "imagem": "projetos/isabelle.png",
+    "link": "https://draisabellenebias.com.br/"
+  },
+  {
+    "id": 15,
+    "titulo": "Toque de No",
+    "modelo": "Loja Virtual",
+    "imagem": "projetos/toquesdeno.png",
+    "link": "https://toquedeno.com.br/"
+  }
+]

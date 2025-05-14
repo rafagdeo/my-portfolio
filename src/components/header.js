@@ -9,8 +9,8 @@ const Header = () => {
   };
 
   return (
-    <div>
-      <header className="navbar fixed w-full px-10 md:border-b-2 border-white/20 flex justify-between bg-black sticky max-w-[1440px] mx-auto py-4 mb-10 top-0  z-10 drop-shadow-md dark:text-black">
+    <>
+      <header className="static container px-10 md:border-b-2 border-white/20 flex justify-between md:w-[1440px] mx-auto py-4 mb-10 top-0 z-10 drop-shadow-md bg-black">
         <div className="logo-page">
           <a className="header-logo text-2xl font-bold" href="https://www.rafaelguilherme.com.br">
             <img src={Logo} width="200" alt="Logo" />
@@ -61,7 +61,7 @@ const Header = () => {
                 href="https://api.whatsapp.com/send?phone=5513996687799&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site!"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-primary font-bold text-black py-2 px-6 hover:bg-black text-white border-primary border-2"
+                className="rounded-full bg-primary font-bold py-2 px-6 hover:bg-black text-white border-primary border-2"
               >
                 Contato
               </a>
@@ -94,7 +94,7 @@ const Header = () => {
 
       {/* Menu Lateral para Mobile */}
       {isMenuOpen && (
-        <div className="fixed z-10 top-16 left-0 w-full h-[calc(60vh-4rem)] bg-black text-white transition-transform duration-300">
+        <div className="z-10 left-0 w-full h-[calc(60vh-4rem)] bg-black text-white transition-transform duration-300">
           <ul className="flex flex-col items-center justify-center h-full w-full space-y-8 ">
             <li>
               <a
@@ -141,7 +141,7 @@ const Header = () => {
           </ul>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
