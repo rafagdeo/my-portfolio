@@ -49,7 +49,7 @@ const Header = () => {
             <span class="h-1 w-2 bg-primary align-middle"></span>
             <li>
               <a
-                href="#projects"
+                href="https://rafaelguilherme.com.br/projects"
                 className="rounded-full border-2 border-primary py-2 px-6 hover:bg-primary"
               >
                 Projetos
@@ -122,7 +122,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#projects"
+                href="https://rafaelguilherme.com.br/projects"
                 className="rounded-full border-2 border-primary py-2 px-12 hover:bg-primary"
               >
                 Projetos
