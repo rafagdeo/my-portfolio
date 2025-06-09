@@ -2,13 +2,9 @@
 import Header from './components/header';
 import Vector from './assets/Vector-logo.svg';
 import { SiTypescript } from 'react-icons/si';
-import { FaReact } from 'react-icons/fa';
+import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from 'react-icons/ri';
-import { FaNodeJs } from 'react-icons/fa';
-import { SiElixir } from 'react-icons/si';
-import { FaPhoenixFramework } from 'react-icons/fa';
-import { FaWordpress } from 'react-icons/fa';
-import { FaElementor } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaPhp, FaWordpress, FaElementor} from 'react-icons/fa';
 import  TestimonialsCarousel  from './components/testimonialscarousel';
 import Footer from './components/footer';
 
@@ -51,13 +47,13 @@ function App() {
         </div>
         <div class="h-1 w-20 bg-secundary"></div>
         <div class="bg-secundary flex rounded-3xl gap-11 w-4/5 items-center content-center justify-center min-h-48">
-          <div class="grid-cols-2 md:grid-cols-8 flex items-center gap-6 p-5">
-            <FaReact className="size-10 md:size-20" />
-            <SiTypescript className="size-10 md:size-20" />
+          <div class="grid-cols-2 md:grid-cols-8 grid md:flex items-center gap-6 p-5">
             <RiTailwindCssFill className="size-10 md:size-20" />
+            <IoLogoJavascript className="size-10 md:size-24" />
+            <SiTypescript className="size-10 md:size-20" />
+            <FaPhp className="size-10 md:size-20" />
             <FaNodeJs className="size-10 md:size-20" />
-            <SiElixir className="size-10 md:size-20" />
-            <FaPhoenixFramework className="size-10 md:size-20" />
+            <FaReact className="size-10 md:size-20" />
             <FaWordpress className="size-10 md:size-20" />
             <FaElementor className="size-10 md:size-20" />
           </div>

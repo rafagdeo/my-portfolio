@@ -34,9 +34,9 @@ const TestimonialsCarousel = () => {
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index} className="p-10">
-            <div className="text-center p-6">
+            <div className="text-center p-4 md:p-12 bg-secundary rounded-lg md:mx-12">
               <div className="stars text-yellow-500 text-2xl mb-2">★★★★★</div>
-              <p className="text-lg italic text-white">
+              <p className="text-lg italic text-black">
                 "{testimonial.feedback}"
               </p>
             </div>
