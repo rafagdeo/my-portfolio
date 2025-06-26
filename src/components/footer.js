@@ -13,7 +13,7 @@ function Footer() {
             <p className="text-lg text-white break-normal">
             Estamos aguardando teu contato, então não perca essa oportunidade!
           </p>
-          <button><a href="https://api.whatsapp.com/send?phone=5513996687799&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site!" className="bg-primary text-center hover:bg-primary/90 rounded-full text-white font-bold py-2 px-4">
+          <button><a href="https://api.whatsapp.com/send?phone=5513996687799&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site!" className="bg-green-500 text-center hover:bg-green-600 rounded-full text-white font-bold py-2 px-4">
             Entre em Contato
           </a></button>
         </div>
