@@ -1,23 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "swiper/css";
-@import "swiper/css/navigation";
-@import "swiper/css/pagination";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 .swiper-pagination-bullet {
-    background: #fff; /* Cor padrão dos pontos */
-    width: 12px;
-    height: 12px;
-    opacity: 0.7; /* Transparência padrão */
-  }
-  
-  .swiper-pagination-bullet-active {
-    background: #ffd700; /* Cor dos pontos ativos */
-    opacity: 1; /* Sem transparência */
-    transform: scale(1.2); /* Aumenta o tamanho do ponto ativo */
-  }
-  
+    background: #ffffff !important;
+}

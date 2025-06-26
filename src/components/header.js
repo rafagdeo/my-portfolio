@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Logo from '../assets/logo-black.svg'; // Ajuste o caminho conforme necessário
+import Logo from '../assets/logo-black.svg';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,9 +62,9 @@ const Header = () => {
                 href="https://api.whatsapp.com/send?phone=5513996687799&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site!"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-primary font-bold py-2 px-6 hover:bg-black text-white border-primary border-2"
+                className="rounded-full bg-green-500 flex gap-2 font-bold py-2 px-6 hover:bg-green-600 text-white border-primary"
               >
-                Contato
+                Contato <FaWhatsapp size={25} />
               </a>
             </li>
           </ul>

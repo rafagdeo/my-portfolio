@@ -102,5 +102,12 @@
     "modelo": "Loja Virtual",
     "imagem": "projetos/toquesdeno.png",
     "link": "https://toquedeno.com.br/"
+  },
+  {
+    "id": 16,
+    "titulo": "Dra Manuela Lopes",
+    "modelo": "Landing Page",
+    "imagem": "projetos/dramanuela.png",
+    "link": "https://manuelalopes.com.br/"
   }
 ]
